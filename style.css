@@ -1,0 +1,131 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.text-sec{
+   color: rgb(2,59,109) !important;
+}
+.bg-sec{
+    background-color:  rgb(2,59,109) !important;
+}
+.text-pri{
+    color: rgb(36,135,206) !important;
+}
+.bg-pri{
+    background-color: rgb(36,135,206) !important;  
+}
+.z{
+    z-index: 100;
+}
+.box{
+    border-color: rgb(36,135,206) !important;
+}
+
+.nav-link:hover{
+    color:rgb(36,135,206) !important ;
+}
+.main{
+    font-size: 8vh;
+}
+.mains{
+    font-size: 7vh;
+}
+.card{
+    transition: all ease-in-out 0.5s;
+}
+.card-zoom:hover{
+    transform: scale(1.09);
+   
+}
+.card-zoom:hover h5{
+    color: rgb(36,135,206) !important;
+}
+/* SWIPER JS */
+.swiper {
+    width: 100%;
+    height: auto;
+   
+  }
+  /* mansonry */
+  .over:hover .content {
+    transform: scale(1);
+    opacity: 1;
+  }
+  .content{
+    position: absolute;
+    background-color: #2487ce94!important;
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: scale(0.7);
+    opacity: 0;
+    transition: all ease-in-out 0.3s;
+  }
+
+ .over::before{
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-top: 3px white solid;
+    border-left: 3px white solid;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    z-index: 50;
+ }
+ .over:hover::before{
+    opacity: 1;
+    transition: all ease-in-out 0.3s;
+ }
+
+ .over::after{
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border-bottom: 3px white solid;
+    border-right: 3px white solid;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    z-index: 50;
+ }
+ .over:hover::after{
+    opacity: 1;
+    transition: all ease-in-out 0.3s;
+ }
+ .team{
+    background-color: #f8fbfe !important;
+ }
+ .img-box{
+    position: relative;
+ }
+ .icon{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(248,251,254,0.849);
+    width: 100%;
+   font-size: 20px;
+   transition: all ease-in-out 0.3s;
+   opacity: 0;
+   padding: 10px 0;
+   column-gap: 25px;
+   bottom: 0;
+ }
+ .T:hover .icon{
+    /* transform: scale(1); */
+    opacity: 1;
+    /* transition: all ease-in-out 0.8s; */
+ }
+ /* FAQ */
+ .accordion-button{
+    box-shadow: none !important;
+    background-color: transparent !important;
+ }
+ 
